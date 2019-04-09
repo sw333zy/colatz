@@ -1,10 +1,8 @@
 def colatz():
     cont = input('Would you like to play?(y/n) ')
     num = input('Enter a number: ')
-    try:
-       usernum = int(num)
-    except ValueError:
-       print("Error: input number only")
+    usernum = int(num)
+   
        
     while (usernum!=1) & (cont=="y"):
         if usernum%2==0:
